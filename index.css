@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #EDF3F8;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    background-color: #EDF3F8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px 165px;
+    padding-bottom: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0px 0px 10px 1px #bbb4b4;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 700;
+    color: #36536B;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+.nav-btn{
+    font-family: Public Sans;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    background: #BA4270;
+    border: 0;
+    border-radius: 45px;
+    width: 173px;
+    height: 48px;
+    color: white;
+}
+
+.nav-btn:hover{
+    border: gray solid 3px;
+    background: #9e3b61;
+}
+
+.nav-btn:active{
+    background: #d24f82;
+    border: 0;
+}
+
+.lines{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    display: none;
+}
+
+.line{
+    height: 3px;
+    width: 30px;
+    background-color: #36536B;
+}
+
+.API-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 220px;
+    margin-top: 100px;
+    flex-wrap: wrap-reverse;
+}
+
+.API-title{
+    font-family: DM Serif Display;
+    font-size: 72px;
+    font-weight: 400;
+    color: #36536B;
+    margin-bottom: 100px;
+}
+
+.API-img{
+    width: 500px;
+}
+
+.cooperation-section{
+    width: 100%;
+    background: #1B262F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 131px;
+    height: 420px;
+}
+
+.cooperation-container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cooperation__container-title{
+    font-family: DM Serif Display;
+    font-size: 48px;
+    font-weight: 400;
+    color: #FBFCFE;
+}
+
+.cooperation__container-subtitle{
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 400;
+    color: #FBFCFE;
+    opacity: 0.7;
+}
+
+.cooperation__container-btn{
+    width: 129px;
+    height: 48px;
+    border: 1px solid #FBFCFE;
+    border-radius: 45px;
+    background-color: #1B262F;
+    color: #FBFCFE;
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.cooperation-container-2{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.cooperation__container__companies{
+    width: 536px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.implement-section{
+    background-color: #EDF3F8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+    height: 1000px;
+}
+
+.implement-container{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 125px;
+    flex-wrap: wrap;
+}
+
+.implement__container__texts{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.implement__container-title{
+    font-family: DM Serif Display;
+    font-size: 48px;
+    font-weight: 400;
+    color: #36536B;
+}
+
+.implement__container-subtitle{
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 400;
+    color: #6C8294;
+}
+
+.implement__pluses{
+    display: flex;
+    gap: 30px;
+}
+
+.implement__plus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 350px;
+}
+
+.implement__plus-img{
+    width: 106px;
+}
+
+.implement__plus-title{
+    font-family: Public Sans;
+    font-size: 18px;
+    font-weight: 700;
+    color: #36536B;
+}
+
+.implement__plus-subtitle{
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 400;
+    color: #6C8294;
+    text-align: center;
+    height: 100px;
+    line-height: 25px;
+}
+
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 165px;
+    background-image: url(footer.svg);
+    background-size: cover;
+}
+
+.footer-container{
+    display: flex;
+    gap: 64px;
+    color: #FBFCFE;
+}
+
+.footer-link{
+    text-decoration: none;
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FBFCFE;
+    opacity: 0.7;
+}
+
+.footer-link:hover{
+    text-decoration: underline;
+}
+
+.footer__images{
+    display: flex;
+    gap: 24px;
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        height: 700px;
+    }
+    nav{
+        width: 100%;
+        padding: 10px 50px;
+        gap: 0;
+    }
+    .nav__links{
+        background-color: #EDF3F8;
+        flex-direction: column;
+        position: absolute;
+        top: 57px;
+        right: 0;
+        padding: 10px;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .lines{
+        display: flex;
+    }
+    .show__links{
+        transform: translateX(0%);
+    }
+    .API-container{
+        gap: 0px;
+        margin-top: 60px;
+        flex-direction: column-reverse;
+    }
+    .API-title{
+        text-align: center;
+        font-size: 32px;
+    }
+    .API-img{
+        width: 300px;
+    }
+    .cooperation-section{
+        flex-direction: column-reverse;
+        height: 670px;
+        gap: 64px;
+        justify-content: center;
+    }
+    .cooperation-container{
+        align-items: center;
+    }
+    .cooperation-container-2{
+        flex-direction: row;
+        gap: 50px;
+    }
+    .cooperation__container__companies{
+        flex-direction: column;
+        gap: 40px;
+        width: 120px;
+    }
+    .cooperation__container__company-img{
+        width: 110px;
+    }
+    .cooperation__container-title{
+        font-size: 36px;
+    }
+    .cooperation__container-subtitle{
+        text-align: center;
+    }
+    .implement-section{
+        height: 1600px;
+        width: 100%;
+        gap: 0px;
+        justify-content: start;
+    }
+    .implement-container{
+        margin-top: 50px;
+        gap: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .implement__container-img{
+        width: 330px;
+    }
+    .implement__container__texts{
+        margin-bottom: 100px;
+    }
+    .implement__container-title{
+        font-size: 36px;
+        text-align: center;
+    }
+    .implement__container-subtitle{
+        text-align: center;
+    }
+    .implement__pluses{
+        margin-top: 0;
+        gap: 50px;
+        flex-direction: column;
+    }
+    .implement__plus{
+        width: 330px;
+    }
+    footer{
+        padding: 0 40px;
+        flex-direction: column;
+        height: 300px;
+        gap: 40px;
+        justify-content: center;
+    }
+    .footer-container{
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    header{
+        height: 800px;
+    }
+    nav{
+        width: 100%;
+        padding: 10px 50px;
+        gap: 0;
+    }
+    .API-container{
+        gap: 0px;
+        margin-top: 60px;
+        flex-direction: column-reverse;
+    }
+    .API-title{
+        text-align: center;
+        font-size: 48px;
+    }
+    .API-img{
+        width: 300px;
+    }
+    .cooperation-section{
+        flex-direction: column-reverse;
+        height: 600px;
+        gap: 64px;
+        justify-content: center;
+    }
+    .cooperation-container{
+        align-items: center;
+    }
+    .cooperation__container-subtitle{
+        text-align: center;
+    }
+    .implement-section{
+        height: 1350px;
+        width: 100%;
+        gap: 100px;
+        align-items: center;
+    }
+    .implement-container{
+        gap: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .implement__container__texts{
+        margin-bottom: 100px;
+    }
+    .implement__container-subtitle{
+        text-align: center;
+    }
+    .implement__pluses{
+        margin-top: 0;
+        gap: 10px;
+    }
+    .implement__plus{
+        width: 200px;
+    }
+    footer{
+        padding: 0 40px;
+    }
+}
