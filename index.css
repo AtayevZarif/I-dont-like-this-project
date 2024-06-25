@@ -131,7 +131,6 @@ ul{
     font-size: 15px;
     font-weight: 400;
     color: #FBFCFE;
-    opacity: 0.7;
 }
 
 .cooperation__container-btn{
@@ -286,6 +285,10 @@ footer{
     }
     .lines{
         display: flex;
+    }
+    .nav-btn{
+        width: 100px;
+        font-size: 10px;
     }
     .show__links{
         transform: translateX(0%);
